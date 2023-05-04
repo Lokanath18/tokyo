@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example Page - Webflow Template</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="icon" type="image/x-icon" href="img/pevicon.png">
+</head>
+<body>
+  <div class="head w3-animate-bottom">
+    <a href="index.html"><h1>TOKYO</h1></a>
+  </div>
+
+  <div class="web">
+    <a href="https://webflow.com/?utm_campaign=brandjs"><img src="img/web.png"></a>
+  </div>
+
+  <div class="option w3-animate-bottom" id="op">
+    <p id="option-1" style="padding-right: 1em;" class="btn active">BLOG</p>
+    <p id="option-2" class="btn">ABOUT</p>
+  </div>
+
+  <div id="op1-content">
+    <div class="container">
+      <div class="tokyo-content w3-animate-left">
+        <a href="colors.html"><img src="img/img-1.png" class="img-fluid" alt=""></a>
+        <div class="content-head">
+          <h5>SOAKING IN THE COLORS</h5>
+        </div>
+        <div class="content-sub-head active">FEBRUARY 28, 2020 IN <a href="sports.html">SPORTS</a></div>
+        <div class="content-ct">After me I dragged six lengths of leather from an equal number of my warriors. These lengths we had previously fastened together, and passing one end to the topmost warrior I lowered the other end cautiously over the opposite side of the wall toward the avenue below. No one was in sight, so, lowering myself to the end of my leather strap, I dropped the remaining thirty feet to the pavement below.</div>
+        <div class="more"><a href="colors.html">READ MORE</a></div>
+      </div>
+
+      <div class="tokyo-content" data-aos="fade-right">
+        <a href="earth.html"><img src="img/img-2.png" class="img-fluid" alt=""></a>
+        <div class="content-head">
+          <h5>AS WE FALL INTO THE EARTH</h5>
+        </div>
+        <div class="content-sub-head">FEBRUARY 28, 2020 IN <a href="music.html">MUSIC</a></div>
+        <div class="content-ct">In this way, with ten warriors, I built a series of three steps from the ground to the shoulders of the topmost man. Then starting from a short distance behind them I ran swiftly up from one tier to the next, and with a final bound from the broad shoulders of the highest I clutched the top of the great wall and quietly drew myself to its broad expanse. After me I dragged six lengths of leather from an equal number of my warriors.</div>
+        <div class="more"><a href="earth.html">READ MORE</a></div>
+      </div>
+
+      <div class="tokyo-content" data-aos="fade-right">
+        <a href="majesty.html"><img src="img/img-3.png" class="img-fluid" alt=""></a>
+        <div class="content-head">
+          <h5>REACHING MAJESTY</h5>
+        </div>
+        <div class="content-sub-head">FEBRUARY 28, 2020 IN <a href="entertainment.html">ENTERTAINMENT</a></div>
+        <div class="content-ct">The scent of hay was in the air through the lush meadows beyond Pyrford, and the hedges on either side were sweet and gay with multitudes of dog-roses. The heavy firing that had broken out while we were driving down Maybury Hill ceased as abruptly as it began, leaving the evening very peaceful and still. We got to Leatherhead without misadventure about nine o'clock, and the horse had an hour's rest while I took supper with my cousins and commended my wife to their care.</div>
+        <div class="more"><a href="majesty.html">READ MORE</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="op2-content" style="display:none;">
+    <div class="container w3-animate-left">
+      <div class="tokyo-content-ct">
+        <img src="img/about.jpeg" class="img-fluid" alt="">
+        <div class="content-head"><h2>I am a man of many colors</h2></div>
+        <div class="ct-1">In this way, with ten warriors, I built a series of three steps from the ground to the shoulders of the topmost man.  Then starting from a short distance behind them I ran swiftly up from one tier to the next, and with a final bound from the broad shoulders of the highest I clutched the top of the great wall and quietly drew myself to its broad expanse.</div>
+        <div class="ct-2">After me I dragged six lengths of leather from an equal number of my warriors.  These lengths we had previously fastened together, and passing one end to the topmost warrior I lowered the other end cautiously over the opposite side of the wall toward the avenue below.  No one was in sight, so, lowering myself to the end of my leather strap, I dropped the remaining thirty feet to the pavement below.</div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+  <footer>
+    <div class="icons">
+      <a href="#" class="fa fa-facebook-square"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-envelope"></a>
+    </div>
+    <div class="foot-txt">POWERED BY WEBFLOW</div>
+  </footer>
+
+ 
+  <script src="js/bootstrap.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    const o1=document.getElementById("option-1");
+    const o2=document.getElementById("option-2");
+    o1.addEventListener("click", function() {
+      o1.style.color="black";
+      o2.style.color="rgb(216, 216, 216)";
+      document.getElementById("op1-content").style.display = "block";
+      document.getElementById("op2-content").style.display = "none";
+    });
+    
+    o2.addEventListener("click", function() {
+      o2.style.color="black";
+      o1.style.color="rgb(216, 216, 216)";
+      document.getElementById("op2-content").style.display = "block";
+      document.getElementById("op1-content").style.display = "none";  
+    });
+ 
+
+    var header = document.getElementById("op");
+    var btns = header.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+      });
+    }
+    </script>
+</body>
+</html>

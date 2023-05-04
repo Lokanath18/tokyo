@@ -1,0 +1,210 @@
+body {
+  overflow-x: hidden;
+}
+
+.web {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 1em;
+  z-index: 99;
+}
+.web img {
+  width: 150px;
+}
+
+.head {
+  text-align: center;
+  padding: 1em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+.head a {
+  text-decoration: none;
+}
+.head h1 {
+  color: rgb(48, 48, 48);
+  font-weight: bold;
+  font-size: 3.5em;
+}
+.head h1:hover {
+  opacity: 0.5;
+}
+
+.option {
+  display: flex;
+  justify-content: center;
+}
+.option p {
+  color: rgb(216, 216, 216);
+  padding-bottom: 4em;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.tokyo-content .content-head {
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 0.5em;
+  color: rgb(66, 66, 66);
+  opacity: 0.7;
+}
+.tokyo-content .content-sub-head {
+  color: rgb(216, 216, 216);
+  padding-bottom: 1.5em;
+  text-align: center;
+}
+.tokyo-content .content-sub-head a {
+  text-decoration: none;
+  color: rgb(216, 216, 216);
+}
+.tokyo-content .content-sub-head a:hover {
+  color: black;
+  opacity: 0.5;
+}
+.tokyo-content a {
+  text-decoration: none;
+  color: rgb(216, 216, 216);
+}
+.tokyo-content a img {
+  text-align: center;
+}
+.tokyo-content a img:hover {
+  opacity: 0.85;
+}
+.tokyo-content .more {
+  padding: 5em;
+  text-align: center;
+  opacity: 0.3;
+  font-size: 0.8em;
+}
+.tokyo-content .more a {
+  color: rgb(48, 48, 48);
+}
+.tokyo-content .more a:hover {
+  opacity: 0.5;
+}
+
+footer {
+  text-align: center;
+  padding-top: 41px;
+  padding-bottom: 41px;
+}
+footer a {
+  color: rgb(25, 25, 25);
+  text-decoration: none;
+}
+footer .fa {
+  font-size: 25px;
+  padding: 0.3em;
+}
+footer .fa:hover {
+  color: black;
+  opacity: 0.5;
+}
+footer .foot-txt {
+  color: rgb(168, 168, 168);
+}
+
+.tokyo-content-ct {
+  text-align: center;
+}
+.tokyo-content-ct img {
+  width: 42%;
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+.tokyo-content-ct h2 {
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+.tokyo-content-ct .ct-2 {
+  margin-top: 1em;
+  padding-bottom: 4em;
+}
+
+.category .head {
+  text-align: center;
+  font-size: 0.5em;
+}
+.category .cat-head {
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 0.8em;
+  opacity: 0.8;
+}
+.category .cat-sub-head {
+  text-align: center;
+  opacity: 0.3;
+  padding-bottom: 1em;
+}
+.category .cat-sub-head a {
+  text-decoration: none;
+  color: rgb(33, 37, 41);
+}
+.category .cat-sub-head a:hover {
+  color: black;
+  opacity: 0.5;
+}
+.category .more {
+  text-align: center;
+  padding: 3em;
+  font-size: 0.8em;
+  opacity: 0.3;
+}
+.category .more a {
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+}
+.category .more a:hover {
+  opacity: 0.5;
+}
+
+@media only screen and (min-width: 600px) {
+  .content-ct {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+  .blog-content .cont-details {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+}
+@media only screen and (min-width: 980px) {
+  .category {
+    padding-left: 20em;
+    padding-right: 20em;
+  }
+  .cat-content {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .tokyo-content {
+    padding-left: 12em;
+    padding-right: 12em;
+  }
+  .content-ct {
+    padding-left: 12em;
+    padding-right: 12em;
+  }
+  .tokyo-content-ct {
+    padding-left: 25em;
+    padding-right: 25em;
+  }
+  .blog-content .cont-details {
+    padding-left: 10em;
+    padding-right: 10em;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .tokyo-content {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+  .tokyo-content-ct {
+    padding-left: 10em;
+    padding-right: 10em;
+  }
+}/*# sourceMappingURL=main.css.map */
